@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Base.h"
-#include "Alumn.h"
-#include "Teacher.h"
+#include "base.h"
+#include "alumn.h"
+#include "teacher.h"
 
 using namespace std;
 //Protiotipos

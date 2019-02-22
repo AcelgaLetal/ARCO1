@@ -1,14 +1,16 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 
-#include "Base.h"
-#include "Alumn.h"
+#include <vector>
+
+#include "base.h"
+#include "alumn.h"
 
 class Teacher : public Base
 {
   private:
     //ListaDeAlumnos
-    string alumList[10];
+    vector<Alumn> alumnList;
     int alumnCounter = 0;
   public:
     //Constructor
@@ -23,9 +25,9 @@ class Teacher : public Base
     void assignGrade(Alumn a, int gr1, int gr2, int gr3);
     //------------------------
 
-    void averageGrade(Alumn a);
+    float averageGrade(Alumn a);
     void printAlumns();
-    void pintBestAlumn();
+    void printBestAlumn();
 };
 
 #endif

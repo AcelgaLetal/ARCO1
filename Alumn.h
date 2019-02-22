@@ -1,17 +1,18 @@
 #ifndef ALUMN_H
 #define ALUMN_H
 
-#include "Base.h"
+#include "base.h"
 
 class Alumn : public Base
 {
   private:
-    int gradesList[10];
+    vector<int> gradeList;
     int gradesCounter = 0;
   public:
+    Alumn();
     Alumn(string, string, string);
 
-    int getGrades();
+    vector<int> getGrades();
     int getNumGrades();
     void newGrade(int gr);
 };
